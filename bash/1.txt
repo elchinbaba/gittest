@@ -1,0 +1,71 @@
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~
+$ cd Desktop
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~/Desktop
+$ git clone https://github.com/elchinbaba/gittest.git
+fatal: destination path 'gittest' already exists and is not an empty directory.
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~/Desktop
+$ git clone https://github.com/elchinbaba/gittest.git
+Cloning into 'gittest'...
+warning: You appear to have cloned an empty repository.
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~/Desktop
+$ cd gittest
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~/Desktop/gittest (main)
+$ code .
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~/Desktop/gittest (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~/Desktop/gittest (main)
+$ git add .
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~/Desktop/gittest (main)
+$ git commit -m "from our comp"
+[main (root-commit) 7b32aee] from our comp
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.html
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~/Desktop/gittest (main)
+$ git push
+fatal: unable to access 'https://github.com/elchinbaba/gittest.git/': Could not resolve host: github.com
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~/Desktop/gittest (main)
+$ git config --global user.name "Administrator"
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~/Desktop/gittest (main)
+$ git config --global user.mail "babalielchin@gmail.com"
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~/Desktop/gittest (main)
+$ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~/Desktop/gittest (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 440 bytes | 440.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/elchinbaba/gittest.git
+ * [new branch]      main -> main
+
+Administrator@WIN-D6GRQOTSRKP MINGW64 ~/Desktop/gittest (main)
+$
